@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - My Pharmacy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Pharmacy</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Checkout</h2>
+
+        <div id="checkout-summary"></div>
+
+        <form id="checkout-form">
+            <label for="customer-name">Full Name</label>
+            <input id="customer-name" name="customerName"
+                   type="text" required>
+
+            <label for="customer-phone">Phone Number</label>
+            <input id="customer-phone" name="customerPhone"
+                   type="tel" required>
+
+            <label for="delivery-address">Delivery Address</label>
+            <textarea id="delivery-address" name="deliveryAddress"
+                      required></textarea>
+
+            <button type="submit">Place Test Order</button>
+        </form>
+
+        <p id="checkout-message" role="status"></p>
+    </main>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Pharmacy</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
+            <a href="account.html">My Account</a>
+            <a href="admin.html" id="admin-link" hidden>Admin Dashboard</a>
+            <span id="welcome-message"></span>
+            <button id="logout-button" hidden>Logout</button>
+            
+        
+        </nav>
+    </header>
+
+    <main>
+        <h2>Available Medicines</h2>
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search medicines..."
+        >
+
+        <div id="medicines">
+            Loading medicines...
+        </div>
+    </main>
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
+```
